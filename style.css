@@ -1,0 +1,91 @@
+.layout{
+	padding: 0;
+	margin: 0;
+	width: 600px;
+	height: 500px;
+	background-image: url('download.jpg');
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.new{
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	background-color: red;
+	width: 12%;
+
+}
+
+.date{
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	background-color: green;
+	width: 14%;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+@keyframes sevencolor{
+
+	0%{
+		color: red;
+	}
+	15%{
+		color: green;
+	}
+	30%{
+		color: grey;
+	}
+	45%{
+		color: blue;
+	}
+	60%{
+		color: violet;
+	}
+	75%{
+		color: chocolate;
+	}
+	90%{
+		color: coral;
+	}
+	100%{
+		color: black;
+	}
+}
+
+.hello{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	animation-name: sevencolor;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+
+button{
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 50%;
+	font-size: 40px;
+	background-color: blue;
+	cursor: pointer;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	transition: all 5s;
+
+}
+
+button:hover{
+	transform: translateX(20px);
+}
